@@ -4,6 +4,7 @@ import './globals.css';
 import Providers from './provider';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import UmamiAnalytics from '@/components/UmamiAnalytics';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -30,6 +31,7 @@ export default function RootLayout({
           </div>
           <Footer />
         </Providers>
+        <UmamiAnalytics />
       </body>
     </html>
   );

@@ -33,6 +33,7 @@ const MovieCategory: React.FC<MovieCategoryProps> = ({ title, category }) => {
         <h2 className="text-2xl font-bold">{title}</h2>
         {isHovered && (
           <Button
+            data-umami-event={`explore-more-${category}`}
             variant="ghost"
             className="ml-4 p-0 h-auto group hover:bg-transparent text-red-500 duration-300 hover:text-red-500/80"
             onClick={() => setIsModalOpen(true)}

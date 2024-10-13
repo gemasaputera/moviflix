@@ -37,6 +37,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({
         />
         {searchTerm && (
           <Button
+            data-umami-event={`searching`}
             className="absolute right-0 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-400/80 hover:bg-transparent"
             variant={'ghost'}
             type="submit"
